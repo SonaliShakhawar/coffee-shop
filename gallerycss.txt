@@ -1,0 +1,18 @@
+body {
+    background-color: slategray;
+}
+.container{
+    align-items: center;
+    float: left;
+}
+.image{
+    float:left;
+    padding:5px;
+  
+}
+ div .f{
+    text-align:center;
+   font-family:sans-serif;
+   color:darkmagenta;
+   background-color: lemonchiffon;
+}

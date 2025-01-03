@@ -1,0 +1,259 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cofee</title>
+</head>
+
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto:wght@300;500&display=swap');
+
+        :root {
+            --main-color: #d3ad7f;
+            --black: #13131a;
+            --bg: #010103;
+            --border: .1rem solid rgba(255,255,255,.3);
+        }
+
+        * {
+            font-family: 'Roboto',sans-serif;
+            margin: 0;
+            padding: 0;
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: 2s linear;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-padding-top: 9rem;
+            scroll-behavior: smooth;
+        }
+
+            html::-webkit-scrollbar {
+                width: .8rem;
+            }
+
+            html::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            html::-webkit-scrollbar-thumb {
+                background: #fff;
+                border-radius: .5rem;
+            }
+
+        body {
+            background: var(--bg);
+            background-image: url("https://img.freepik.com/free-photo/coffee-beans-dark-background-top-view-coffee-concept_1220-6299.jpg" );
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+        }
+
+        .header {
+            background: var (--bg);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 7%;
+            border-bottom: var(--border);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+            /* .header.logo img{
+   height:2rem;
+width:2rem;  } */
+
+            .header .navbar a {
+                margin: 0 1rem;
+                font-size: 1.6rem;
+                color: #fff;
+            }
+
+                .header .navbar a:hover {
+                    color: var(--main-color);
+                    border-bottom: .1rem solid var(--main-color);
+                    padding-bottom: .5rem;
+                }
+
+            .header .icons div {
+                color: #fff;
+                cursor: pointer;
+                font-size: 2.5rem;
+                margin-left: 2rem;
+            }
+
+                .header .icons div:hover {
+                    color: var(--main-color);
+                }
+
+        #menu-btn {
+            display: none;
+        }
+
+        .header .search-form {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            background: #fff;
+            width: 30rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+        }
+
+            .header .search-form input {
+                height: 100%;
+                width: 100%;
+                font-size: 1.6rem;
+                color: var(--black);
+                padding: 1rem;
+                text-transform: none;
+            }
+
+            .header .search-form label {
+                cursor: pointer;
+                font-size: 2.2rem;
+                margin-right: 1rem;
+                color: var(--black);
+                transform: scaleY(0);
+                transform-origin: top;
+            }
+
+                .header .search-form label:hover {
+                    color: var(--main-color);
+                }
+
+        .header .car-items-container {
+            position: absolute;
+            top: 100%;
+            right: 0%;
+            height: calc(100vh - 9.5rem);
+            width: 35rem;
+            background: #fff;
+            padding: 0 1.5rem;
+        }
+
+            .header .car-items-container .cart-item {
+                position: relative;
+                margin: 3rem 0;
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+            }
+
+                .header .car-items-container .cart-item.fa-time {
+                    position: absolute;
+                    top: 3rem;
+                    right: 1rem;
+                    font-size: pointer;
+                    color: var(--black);
+                }
+
+                    .header .car-items-container .cart-item.fa-time:hover {
+                        color: var(--main-color);
+                    }
+
+                .header .car-items-container .cart-item img {
+                    height: 7rem;
+                }
+
+        section .centered h1 {
+            padding-left: 10px;
+            padding-top: 300px;
+            font-family: monospace;
+            font-size: 28px;
+            font-weight: normal;
+            color:aliceblue;
+            /* text-align: center; */
+            /* position:; */
+            top: 80%;
+            left: 80%;
+            /* transform: translate(-50%, -50%); */
+        }
+
+        section .centered p {
+            font-family: sans-serif;
+            font-size: 20px;
+            font-style: bold;
+            padding-left: 15px;
+            color: rgb(9, 9, 9);
+            display:ruby-base;
+            line-height: 1.5;
+            height: 200px;
+            width: 600px;
+            /*background: linear-gradient(rgb(35, 35, 144),rgb(227, 155, 155));
+            background: linear-gradient(rgb(114, 114, 208),rgb(236, 136, 136));*/
+            /* background-color:rgb(214, 178, 178); */
+            background-color:cadetblue;
+        }
+
+        span {
+            font-size: 28px;
+            color:lightcyan;
+            font-family:'Times New Roman';
+        }
+
+    </style>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="https://www.freepnglogos.com/uploads/coffee-logo-png/coffee-logo-design-creative-idea-logo-elements-2.png" height="90" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="Menu1.html">MENU</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="Contact.html">CONTACT</a>
+            <a href="About_us.html">ABOUT</a>
+            <a href="blog.html">BLOGS</a>
+            <a href="Login.html">LOGIN</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class=" fas fa-shopping-cart" id="cart-btn"></div>
+            <div class=" fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here.....">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+        </div>
+        </div>
+        </div>
+    </header>
+    <section>
+        <div class="centered">
+            <h1>
+                "Today’s good mood is sponsored by coffee!!!"
+            </h1>
+            </br>
+            <p>
+                <span> Coffeeology </span>: <br>Espresso yourself. So many blends, so little time.
+                Take life <mark>one sip</mark> at a time, and stay grounded. Better latte than never.
+                Take time to smell the cover.
+                I was taken by the power that savoring a simple cup of coffee can have to connect people and create community.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Create js file link -->
+    <script src="index.js"></script>
+</body>
+</html>

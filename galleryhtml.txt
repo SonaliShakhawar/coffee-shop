@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="Gallery.css">
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+<body>
+    <div class="container">
+    <div class="image">   
+        <img src="https://beautifuleatsandthings.com/wp-content/uploads/2021/06/torani-3-742x1024.jpg" height="300" width="300"/>
+        <figcaption class="f"> Iced Cofee</figcaption></div>
+    <div class="image">
+        <img src="https://bakingmischief.com/wp-content/uploads/2019/05/iced-mocha-image-square.jpg" height="300" width="300" />
+        <figcaption class="f"> Mocha</figcaption>
+        </div>
+     <div class="image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS76F_2hi-XBlCsj1HHYH6TfqVtpMZqKOkCOQ&usqp=CAU" height="300" width="300" />
+        <figcaption class="f"> Expresso</figcaption>
+    </div>
+        <div class="image">
+            <img src=" https://athome.starbucks.com/sites/default/files/2022-05/CAH_CaramelMacch_Ingredient_2880x2880.jpg" height="300" width="300" />
+            <figcaption class="f">CarmelMacch</figcaption>
+        </div>
+        <div class=" image">
+            <img src="https://static.toiimg.com/thumb/71424715.cms?imgsize=1544928&width=800&height=800" height="300" width="300" />
+            <figcaption class="f">Carmel</figcaption>
+        </div>
+        <div class="image">
+            <img src="https://www.storypick.com/wp-content/uploads/2016/03/CAPPUCCINO-COFFEE.jpg" height="300" width="300"/>
+            <figcaption class="f">Cappuccino</figcaption>
+        </div>
+        <div  class="image">
+             <img src="https://www.storypick.com/wp-content/uploads/2016/03/Old-Fashioned-Irish-Coffee.jpg" height="300" width="300"/>
+            <figcaption class="f">Irish</figcaption>
+        </div>
+        <div class="image">
+            <img src="https://www.storypick.com/wp-content/uploads/2016/03/Cafefrappe.jpg" height="300" width="300"/>
+            <figcaption class="f">Frappe</figcaption>
+        </div>
+        </div>
+</body>
+</html>
